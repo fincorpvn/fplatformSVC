@@ -1,0 +1,31 @@
+git clone https://github.com/fincorpvn/fplatformSVC.git 
+
+cd fplatformSVC 
+
+unzip fplatform-product-release-1.0.2.zip 
+
+cd fplatform-product-release-1.0.2
+
+sudo ./install 
+
+
+
+sau khi cài đặt, fplatform sẽ tạo 3 đường dẫn thư mục  
+
+/etc/fplatform (home directory) 
+
+/var/log/fplatform (log directory) 
+
+/var/lib/fplatform (data directory) 
+
+Liên hệ fincorp để lấy file khởi tạo db mới nhất và đặt vào  đường dẫn sau /etc/fplatform/conf/sqlscript/ 
+
+Thay đổi cấu hình IP trong file /etc/fplatform/env/fplatform-env 
+
+Cd /etc/fplatform 
+
+Sudo ./fplatform start efk 
+
+Sudo ./fplatform start common 
+
+Sudo ./fplatform start fplatform 
